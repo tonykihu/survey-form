@@ -1,0 +1,21 @@
+body {
+    background-image: url();
+    background-color: blue;
+    color: white;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+form {
+    background-color: black;
+}
