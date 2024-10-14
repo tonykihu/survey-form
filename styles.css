@@ -8,10 +8,11 @@ body {
     height: 100vh;
     background-image: url("images/bg-image.jpg");
     background-position: center;
-    background-size: cover;
+    object-fit: fill;
+    background-repeat: no-repeat;
     color: white;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 header {
@@ -21,46 +22,57 @@ header {
 
 #survey-form {
     background-color: rgba(98, 62, 0, 0.909);
-    width: 80vw;
-    margin: auto;
+    width: 60vw;
+    margin: 0 auto;
+    max-width: fit-content;
     margin-bottom: 2em;
-    padding: 20px;
+    padding: 15px;
     border-radius: 15px;
     color: white;
 }
 
 fieldset {
     border: none;
-    padding: 1rem 0;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-label {
-    display: block;
-}
-/*
-input {
+input[type="text"], input[type="email"], input[type="number"], input[type="url"], textarea, select {
     width: 100%;
-}*/
+    border-radius: 6px;
+    height: 40px;
+    border-style: solid;
+    border-color: rgb(37, 23, 0);
+    border-width: 2px;
+}
 
-/*input[type="submit"] {
+input[type="submit"] {
     display: block;
-    background-color: #000000;
+    background-color: #201d18;
     color: white;
     align-items: center;
-} */
+    width: 60%;
+    border: none;
+    margin: 0 auto;
+} 
+
+#comments {
+    width: 80%;
+    height: 10vh;
+}
 
 #submit {
-    width: 80px;
-    align-items: center;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    border-style: groove;
     border: none;
 }
-/*
-h1 {
-    font-size: 36px;
-    font-family: 'Courier New', Courier, monospace;
+
+#submit:hover {
+    background-color: darkgray;
+    color: black;
 }
 
-p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: lighter;
-} */

@@ -8,61 +8,81 @@
 </head>
 <body>
     <header>
-        <h1 id="title">freeCodeCamp Survey Form</h1>
-        <p id="description"><em>Thank you for taking the time to help is improve the platform</em></p>
+        <h1 id="title">Web Development Survey Form</h1>
+        <p id="description"><em>Thank you for taking the time.</em></p>
     </header>
         <form id="survey-form">
         <fieldset>
-            <label id="name-label">Name: <input id="name" type="text" required placeholder="Enter your name"></input></label>
-            <label id="email-label">Email: <input id="email" type="email" required placeholder="Enter your email"></input></label>
-            <label id="number-label">Age(optional): <input id="number" type="number" min="8" max="12" placeholder="Age"></input></label>
+            <label id="name-label">Name</label><input id="name" type="text" required placeholder="John Doe" autofocus></input>
+            <label id="email-label">Email</label><input id="email" type="email" required placeholder="johndoe@abcde.com"></input>
+            <label id="number-label">Age(optional)</label><input id="number" type="number" min="18" max="99" placeholder="Age"></input>
         </fieldset>
         <fieldset>
-            <label for="current-role">Which option best describes your current role?
-                <select id="current-role">
-                    <option value="">Select current role</option>
-                    <option value="1">Student</option>
-                    <option value="2">Full Time Job</option>
-                    <option value="3">Full Time Learner</option>
-                    <option value="4">Prefer not to say</option>
-                    <option value="5">Other</option>
-                </select>
-            </label>
+            <label for="current-role">Which option best describes your current role?</label>
+            <select id="current-role">
+                <option value="">Select current role</option>
+                <option value="1">Student</option>
+                <option value="2">Full Time Job</option>
+                <option value="3">Freelancer</option>
+                <option value="4">Full Time Learner</option>
+                <option value="5">Student/Working</option>
+                <option value="6">Prefer not to say</option>
+                <option value="7">Other</option>
+            </select>
         </fieldset>
         <fieldset>
-            <legend>Would you recommend freeCodeCamp to a friend?</legend>
-            <label><input type="radio" name="recommend" value="definitely" />Definitely</label>
-            <label><input type="radio" name="recommend" value="maybe" />Maybe</label>
-            <label><input type="radio" name="recommend" value="not-sure" />Not Sure</label>
+            <legend>Would you recommend Web Development to an interested friend?</legend>
+            <label><input type="radio" name="recommend" value="definitely" /> Definitely</label>
+            <label><input type="radio" name="recommend" value="maybe" /> Maybe</label>
+            <label><input type="radio" name="recommend" value="not-sure" /> Not Sure</label>
         </fieldset>
         <fieldset>    
-            <label for="fav-feature">What is your favorite feature of freeCodeCamp?
-                <select id="dropdown">
-                    <option value="">Select an option</option>
-                    <option value="1">Challenges</option>
-                    <option value="2">Projects</option>
-                    <option value="3">Community</option>
-                    <option value="4">Open Source</option>
-                </select>
-            </label>
+            <label for="fav-feature">What is your primary focus in web development?</label>
+            <select id="dropdown">
+                <option value="">Select an option</option>
+                <option value="1">Front-end development</option>
+                <option value="2">Back-end development</option>
+                <option value="3">Full-stack development</option>
+                <option value="4">Mobile web development</option>
+            </select>
         </fieldset>
         <fieldset>
-            <legend>What would you like to see improved? (Check all that apply)</legend>
-            <label><input type="checkbox" name="improved" value="front-end" />Front-end Projects</label>
-            <label><input type="checkbox" name="improved" value="Back-end" />Back-end Projects</label>
-            <label><input type="checkbox" name="improved" value="data" />Data Visualization</label>
-            <label><input type="checkbox" name="improved" value="challenges" />Challenges</label>
-            <label><input type="checkbox" name="improved" value="open-source" />Open Source Community</label>
-            <label><input type="checkbox" name="improved" value="gitter" />Gitter help rooms</label>
-            <label><input type="checkbox" name="improved" value="videos" />Videos</label>
-            <label><input type="checkbox" name="improved" value="city-meetups" />City Meetups</label>
-            <label><input type="checkbox" name="improved" value="forums" />Forum</label>
-            <label><input type="checkbox" name="improved" value="additional" />Additional Courses</label>
+            <legend>What programming languages are you most proficient in for web development? (Check all that apply)</legend>
+            <label><input type="checkbox" name="improved" value="html" /> HTML</label>
+            <label><input type="checkbox" name="improved" value="css" /> CSS</label>
+            <label><input type="checkbox" name="improved" value="JavaScript" /> JavaScript</label>
+            <label><input type="checkbox" name="improved" value="python" /> Python</label>
+            <label><input type="checkbox" name="improved" value="php" /> PHP</label>
+            <label><input type="checkbox" name="improved" value="java" /> Java</label>
+            <label><input type="checkbox" name="improved" value="ruby" /> Ruby</label>
+            <label><input type="checkbox" name="improved" value="other" /> Other (Please specify):<input type="text" /></label>
         </fieldset>
         <fieldset>
-            <label for="comments">Any comments or suggestions?
-            <textarea id="comments" placeholder="Enter your comments here..."></textarea>
-            </label>
+            <legend> What is your preferred framework or library for web development? (Check all that apply)</legend>
+            <label><input type="checkbox" name="improved" value="react" /> React</label>
+            <label><input type="checkbox" name="improved" value="angular" /> Angular</label>
+            <label><input type="checkbox" name="improved" value="vue" /> Vue.js</label>
+            <label><input type="checkbox" name="improved" value="jquery" /> jQuery</label>
+            <label><input type="checkbox" name="improved" value="bootstrap" /> Bootstrap</label>
+            <label><input type="checkbox" name="improved" value="tailwind" /> Tailwind CSS</label>
+            <label><input type="checkbox" name="improved" value="django" /> Django</label>
+            <label><input type="checkbox" name="improved" value="other1" /> Other (Please specify):<input type="text" /></label>
+        </fieldset>
+        <fieldset>
+            <legend>What is the most important factor you consider when choosing a web development project?</legend>
+            <label><input type="radio"  name="project-factors" value="complexity" /> Project complexity</label>
+            <label><input type="radio"  name="project-factors" value="budget" /> Budget</label>
+            <label><input type="radio"  name="project-factors" value="relationship" /> Client relationship</label>
+            <label><input type="radio"  name="project-factors" value="interest" /> Personal interest</label>
+            <label><input type="radio"  name="project-factors" value="potential" /> Potential learning opportunities</label>
+            <label><input type="radio"  name="project-factors" value="other2" /> Other (Please specify):<input type="text"/></label>
+        </fieldset>
+        <fieldset>
+            <label>Github Profile URL:<input type="url"></label>
+        </fieldset>
+        <fieldset>
+            <label for="comments">Any comments or suggestions?</label>
+            <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
         </fieldset>
         <input id="submit" type="submit" value="Submit"/>
     </form>
